@@ -8,10 +8,5 @@ import ViewStudent from './view';
 Vue.use(Router);
 
 export default new Router({
-  routes: [
-    Dashboard,
-    EditStudent,
-    CreateStudent,
-    ViewStudent,
-  ],
+  routes: [Dashboard, EditStudent, CreateStudent, ViewStudent]
 });
