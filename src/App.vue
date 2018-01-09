@@ -19,5 +19,8 @@ export default {
 </script>
 
 <style>
-
+.jumbotron {
+  margin-top: 10px;
+  padding-top: 2px;
+}
 </style>
