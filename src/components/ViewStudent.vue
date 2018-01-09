@@ -1,7 +1,7 @@
 <template>
- <div id="viewstudent">
-   <h2>View Student</h2>
- </div>
+  <div id="viewstudent">
+    <h2>View Student</h2>
+  </div>
 </template>
 
 <script>
@@ -18,22 +18,8 @@ export default {
       department: null,
       level: null,
     };
-  },watch: {
-    '$route' : fetchData,
-  },
-  beforeRouteEnter: (to, from, next) => {
-    db.collection('Student').where('student_id', '==', to.params.student_id).get().then(querySnapshot => {
-      querySnapshot.forEach( doc => {
-        next(vm => {
-          vm.matric_no = doc.data().Student_id;
-          vm.firstName = doc.data().firstName;
-          vm.lastName = doc.data().lastName;
-          vm.department = doc.data().department;
-          vm.level = doc.data().level;
-        });
-      });
-    });
-  },
+  }
+
 };
 
 </script>

@@ -1,14 +1,31 @@
 <template>
   <div id="dashboard">
-
-    <ul class="collection with-header">
-      <li class="collection-header"><h4>Students</h4></li>
-      <li v-for="student in Students" :key="student.id" class="collection-item">
-        <router-link class="secondary-content" :to="{name: 'ViewStudent', params: {Student_id : student.id}}"> <i class="fa fa-eye"></i> </router-link>
-        <p>Matric Number: {{student['matric_no']}} </p>
-        <p>Full Name: {{student.firstName}} {{student.lastName}} </p>
-      </li>
-    </ul>
+    <h2>All Student</h2>
+    <div class="row">
+      <div v-for="student in Students" :key="student.id">
+        <div class="col s12 m4 l4">
+          <div class="card">
+            <div class="card-content">
+              <span class="card-title">{{student.firstName}} {{student.lastName}} </span>
+              <p class="lead">Matric No -
+                <span class="chip">
+                  {{student['matric_no']}}
+                </span>
+              </p>
+              <p>Department -
+                <span class="colored">{{student.department}}</span>
+              </p>
+            </div>
+            <div class="card-action">
+              <router-link class="waves-effect waves-light btn" :to="{name: 'ViewStudent', params: {Student_id : student.id}}">
+                View Student
+                <i class="fa fa-eye"></i>
+              </router-link>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <div class="fixed-action-btn">
       <router-link to="/student/new" class="btn-floating btn-large coral">
@@ -48,7 +65,14 @@ export default {
 };
 
 </script>
-
 <style>
-
+.lead {
+  color: black;
+  font-weight: bold;
+  font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+}
+.colored {
+  font-family: monospace;
+  font-weight: 300;
+}
 </style>

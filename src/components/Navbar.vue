@@ -9,3 +9,11 @@
     </nav>
   </div>
 </template>
+
+<style scoped>
+@media screen and (max-width: 434px) {
+  .brand-logo {
+    font-size: 24px;
+  }
+}
+</style>
