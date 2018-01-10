@@ -4,7 +4,7 @@
     <div class="row">
       <div v-for="student in Students" :key="student.id">
         <div class="col s12 m4 l4">
-          <div class="card">
+          <div class="card z-depth-2 hoverable">
             <div class="card-content">
               <span class="card-title">{{student.firstName}} {{student.lastName}} </span>
               <p class="lead">Matric No -
@@ -17,7 +17,7 @@
               </p>
             </div>
             <div class="card-action">
-              <router-link class="waves-effect waves-light btn" :to="{name: 'ViewStudent', params: {Student_id : student.id}}">
+              <router-link class="waves-effect waves-light btn" :to="{name: 'ViewStudent', params: {student_id : student['matric_no']}}">
                 View Student
                 <i class="fa fa-eye"></i>
               </router-link>
@@ -36,7 +36,7 @@
 </template>
 
 <script>
-import db from '@/services/firebaseInit';
+import{db} from '@/services/firebaseInit';
 
 export default {
   name: 'dashboard',
