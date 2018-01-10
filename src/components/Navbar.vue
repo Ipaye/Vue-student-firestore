@@ -16,4 +16,7 @@
     font-size: 24px;
   }
 }
+.brand-logo {
+  font-family: 'Rajdhani', sans-serif;
+}
 </style>
