@@ -1,7 +1,7 @@
 import ViewStudent from '@/components/ViewStudent';
 
 export default {
-  path: '/student/:Student_id',
+  path: '/student/:student_id',
   name: 'ViewStudent',
-  component: ViewStudent,
+  component: ViewStudent
 };
