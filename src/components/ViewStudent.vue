@@ -24,6 +24,11 @@
         </button>
       </div>
     </div>
+    <div class="fixed-action-btn">
+      <router-link class="btn-floating btn-large coral" :to="{name: 'EditStudent', params: {student_id : matric_no}}">
+        <i class="fa fa-edit"></i>
+      </router-link>
+    </div>
   </div>
 </template>
 

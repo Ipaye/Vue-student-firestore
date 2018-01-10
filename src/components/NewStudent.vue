@@ -34,10 +34,14 @@
             <label for="disabled">Email</label>
           </div>
         </div>
-        <button type="submit" class="waves-effect waves-light btn">Sutmit</button>
-        <router-link to="/" class="waves-effect waves-light btn red">Cancel
-          <i class="fa fa-undo"></i>
-        </router-link>
+        <div class="row">
+          <div class="col s12">
+            <button type="submit" class="waves-effect waves-light btn">Sutmit</button>
+            <router-link to="/" class="waves-effect waves-light btn red">Cancel
+              <i class="fa fa-undo"></i>
+            </router-link>
+          </div>
+        </div>
       </form>
     </div>
 
@@ -79,7 +83,7 @@ export default {
 
 </script>
 
-<style scoped>
+<style>
 .createStudent {
   padding: 30px;
   margin-top: 20px;
