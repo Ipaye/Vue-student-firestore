@@ -15,6 +15,10 @@
               <p>Department -
                 <span class="colored">{{student.department}}</span>
               </p>
+              <hr>
+              <p>Email -
+                <span class="colored">{{student.email}}</span>
+              </p>
             </div>
             <div class="card-action">
               <router-link class="waves-effect waves-light btn" :to="{name: 'ViewStudent', params: {student_id : student['matric_no']}}">

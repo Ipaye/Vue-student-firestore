@@ -13,6 +13,8 @@
             <span class="lead">Department of</span> - {{department}} </li>
           <li class="collection-item">
             <span class="lead">Level</span> - {{level}} </li>
+          <li class="collection-item">
+            <span class="lead">Email</span> - {{email}} </li>
         </ul>
         <router-link to="/" class="waves-effect waves-light btn">Back
           <i class="fa fa-backward"></i>
@@ -38,6 +40,7 @@ export default {
       lastName: null,
       department: null,
       level: null,
+      email: null
     };
   },
   beforeRouteEnter: (to, from, next) => {
@@ -51,6 +54,7 @@ export default {
           vm.lastName = doc.data().lastName;
           vm.department = doc.data().department;
           vm.level = doc.data().level;
+          vm.email = doc.data().email;
         })
       })
     })
@@ -69,6 +73,7 @@ export default {
           this.lastName = doc.data().lastName;
           this.department = doc.data().department;
           this.level = doc.data().level;
+          this.email = doc.data().email;
         })
       })
     },
