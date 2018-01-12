@@ -5,7 +5,7 @@
         <h4>Edit Student Record</h4>
         <div class="row">
           <div class="input-field col s12 l6">
-            <input placeholder="Enter your firstName" v-model="firstName" type="text" class="validate" required>
+            <input v-model="firstName" type="text" class="validate" required>
             <label for="first_name">First Name</label>
           </div>
           <div class="input-field col s12 l6">
@@ -15,7 +15,7 @@
         </div>
         <div class="row">
           <div class="input-field col s12 l4 m4">
-            <input v-model="level" placeholder="Enter your Level" type="text" class="validate" required>
+            <input v-model="level" type="text" class="validate" required>
             <label for="Level">Level</label>
           </div>
           <div class="input-field col s12 l4 m4">
@@ -29,7 +29,7 @@
         </div>
         <div class="row">
           <div class="input-field col s12">
-            <input v-model="email" placeholder="Enter your Email Address" type="email" class="validate">
+            <input v-model="email" type="email" class="validate">
             <label for="Email">Email</label>
           </div>
         </div>

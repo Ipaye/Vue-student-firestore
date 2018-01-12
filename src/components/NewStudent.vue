@@ -6,11 +6,11 @@
         <h4>Create New Student Record</h4>
         <div class="row">
           <div class="input-field col s12 l6">
-            <input placeholder="Enter your firstName" v-model="firstName" type="text" class="validate" required>
+            <input v-model="firstName" type="text" class="validate" placeholder="Enter your firstName" required>
             <label for="first_name">First Name</label>
           </div>
           <div class="input-field col s12 l6">
-            <input v-model="lastName" type="text" class="validate" required>
+            <input v-model="lastName" type="text" class="validate" placeholder="Enter your LastName" required>
             <label for="last_name">Last Name</label>
           </div>
         </div>
@@ -30,7 +30,7 @@
         </div>
         <div class="row">
           <div class="input-field col s12">
-            <input v-model="email" placeholder="Enter your Email Address" type="email" class="validate">
+            <input v-model="email" type="email" class="validate">
             <label for="disabled">Email</label>
           </div>
         </div>
