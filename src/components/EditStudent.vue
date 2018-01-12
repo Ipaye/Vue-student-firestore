@@ -16,26 +16,26 @@
         <div class="row">
           <div class="input-field col s12 l4 m4">
             <input v-model="level" placeholder="Enter your Level" type="text" class="validate" required>
-            <label for="disabled">Level</label>
+            <label for="Level">Level</label>
           </div>
           <div class="input-field col s12 l4 m4">
             <input v-model="matric_no" type="number" class="validate" required>
-            <label for="email">Matric Number</label>
+            <label for="Matric No">Matric Number</label>
           </div>
           <div class="input-field col s12 l4 m4">
             <input v-model="department" type="text" class="validate" required>
-            <label for="password">Department</label>
+            <label for="Department">Department</label>
           </div>
         </div>
         <div class="row">
           <div class="input-field col s12">
             <input v-model="email" placeholder="Enter your Email Address" type="email" class="validate">
-            <label for="disabled">Email</label>
+            <label for="Email">Email</label>
           </div>
         </div>
         <div class="row">
           <div class="col s12">
-            <button type="submit" class="waves-effect waves-light btn">Sutmit</button>
+            <button type="submit" class="waves-effect waves-light btn">Submit</button>
             <router-link to="/" class="waves-effect waves-light btn red">Cancel
               <i class="fa fa-undo"></i>
             </router-link>
